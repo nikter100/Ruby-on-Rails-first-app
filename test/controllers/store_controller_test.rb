@@ -8,6 +8,7 @@ class StoreControllerTest < ActionDispatch::IntegrationTest
     assert_select 'main ul.catalog li', 3 
     assert_select 'h2', 'Program' 
     assert_select '.price', /\$[,\d]+\.\d\d/
+    assert_select '@cashe', false
   end
   
 end
