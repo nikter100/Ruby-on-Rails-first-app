@@ -5,7 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
+Product.create!(title: 'Seven',
   description:
     %{<p>
       <em>Native Apps, Multiple Platforms</em>
@@ -14,6 +14,6 @@ Product.create!(title: 'Seven Mobile Apps in Seven Weeks',
       introduction to seven platforms, whether you’re new to mobile or an
       experienced developer needing to expand your options. Plus, you’ll find
       out which cross-platform solution makes the most sense for your needs.
-      </p>},
-  image_url: '7apps.jpg',
+      </p>}
+    image_url: zdjecie.jpg
 price: 26.00)
