@@ -56,7 +56,7 @@ class ProductTest < ActiveSupport::TestCase
 
   test "prtoduct title must be unqiue" do 
     product = Product.new(
-                title: products(:rubs).title,
+                title: products(:ruby).title,
                 description: "yyy",
                 price: 1,
                 image_url: "image.gif")

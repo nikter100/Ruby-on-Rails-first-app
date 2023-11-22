@@ -6,13 +6,13 @@ one:
   image_url: zdjecie.jpg
   price: 9.99
 
-two:
+dwa:
   title: MyString
   description: MyText
   image_url: zdjecie.jpg
   price: 9.99
 
-rubs:
+ruby:
    title: Program 
    description:
       Ruby is the fastest growing and most exciting dynamic
