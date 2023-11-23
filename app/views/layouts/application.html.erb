@@ -17,6 +17,9 @@
 
     <section class="content">
       <nav class="side_nav"> 
+        <div id='cart' class='carts'>
+        <%= reder_if @cart && @cart.line_items.any?, @cart %>
+        </div>
         <ul>
           <li><%= Time.current %></li>
           <li><a href="/">Home</a></li>

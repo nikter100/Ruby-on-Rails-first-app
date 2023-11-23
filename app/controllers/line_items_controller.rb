@@ -33,6 +33,7 @@ class LineItemsController < ApplicationController
         session[:counter] = 0
         format.html { redirect_to @line_item.cart, 
                       notice: "Line item was successfully created." }
+        format.js {@current_item = @line_item}
         format.json { render :show, status: :created, location: @line_item }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -45,7 +46,7 @@ class LineItemsController < ApplicationController
   def update
     respond_to do |format|
       if @line_item.update(line_item_params)
-        format.html { redirect_to @line_item.cart }
+        format.html { redirect_to store_index_url }
         format.html { redirect_to line_item_url(@line_item), notice: "Line item was successfully updated." }
         format.json { render :show, status: :ok, location: @line_item }
       else
