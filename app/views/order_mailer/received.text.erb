@@ -1,0 +1,6 @@
+Dear <%= @order.name %>
+
+Dziekujemy za zakup w naszej paczkarni. 
+
+Zamowiles:
+<%= render @order.line_items -%>

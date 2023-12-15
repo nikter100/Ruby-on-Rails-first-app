@@ -1,0 +1,7 @@
+<h3>Zamowienie paczkarni</h3>
+<p>
+  Chcemy cie poinformowac co zamowiles w naszej paczkarni:  
+</p>
+<table>
+<tr><th colspan="2">Qty</th><th>Description</th></tr>
+<%= render @order.line_items -%> </table>
